@@ -31,9 +31,6 @@ var selectAll = function selectAll() {
       qb.where(
         qb.collection('image')
       )
-      .orderBy(
-        qb.sort('filename')
-      )
       .slice(0,300) //return 300 documents "per page" (pagination)
     ).result();
 };
