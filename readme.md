@@ -7,7 +7,7 @@ To get started first please follow these steps:
 
 * clone the repository
 * `cd Geophoto`
-* `npm install && bower install`
+* `npm install`
 * see the important section below for additional requirements
 
 ##Important!

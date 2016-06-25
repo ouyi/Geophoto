@@ -7,9 +7,9 @@ var marklogic = require('marklogic');
 var path = require('path');
 var connection = {
   host: 'localhost',
-  port: 5003,
-  user: 'admin',
-  password: 'admin'
+  port: 8000,
+  user: 'geophoto',
+  password: 'geophoto'
 };
 var db = marklogic.createDatabaseClient(connection);
 

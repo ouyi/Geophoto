@@ -4,6 +4,7 @@ const ExifImage = require('exif-makernote-fix').ExifImage;
 const Promise   = require('bluebird');
 const https     = require('https');
 const fs        = require('fs');
+const apikey       = require('./apikey.json').apikey;
 
 module.exports = class MetaDataExtractor {
   constructor(image) {
@@ -120,7 +121,7 @@ module.exports = class MetaDataExtractor {
   }
 
   _reverseGeoLookup(latitude, longitude) {
-    const key = '';
+    const key = apikey;
     var options = {
       hostname: 'maps.googleapis.com',
       path: '/maps/api/geocode/json?latlng=' + latitude + ',' + longitude + '&key=' + key,

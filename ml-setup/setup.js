@@ -4,8 +4,8 @@ var fs = require("fs");
 var path = require('path');
 var request = Promise.promisify(require("request"));
 
-var username = 'admin'; // update if required
-var password = 'admin'; // update if required
+var username = 'geophoto'; // update if required
+var password = 'geophoto'; // update if required
 var hostname = 'localhost';
 var port = 8002;
 var baseURL = 'http://' + hostname + ':' + port;
